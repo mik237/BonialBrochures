@@ -1,9 +1,10 @@
 package me.ibrahim.bonialbrochures.data.mappers
 
+import me.ibrahim.bonialbrochures.data.BrochureType
 import me.ibrahim.bonialbrochures.data.remote.dto.BrochureContent
 import me.ibrahim.bonialbrochures.domain.models.BrochureData
 
-fun BrochureContent.toBrochuresData(): BrochureData {
+fun BrochureContent.toBrochuresData(contentType: String = BrochureType.Brochure.type): BrochureData {
     return BrochureData(
         id = id,
         contentId = contentId,
@@ -12,7 +13,7 @@ fun BrochureContent.toBrochuresData(): BrochureData {
         validUntil = validUntil,
         publishedFrom = publishedFrom,
         publishedUntil = publishedUntil,
-        type = type,
+        contentType = contentType,
         brochureImage = brochureImage,
         pageCount = pageCount,
         publisherName = publisher.name,

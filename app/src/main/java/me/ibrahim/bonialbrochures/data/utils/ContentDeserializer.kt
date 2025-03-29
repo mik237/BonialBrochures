@@ -1,4 +1,4 @@
-package me.ibrahim.bonialbrochures.data.remote.util
+package me.ibrahim.bonialbrochures.data.utils
 
 import com.google.gson.Gson
 import com.google.gson.JsonDeserializationContext

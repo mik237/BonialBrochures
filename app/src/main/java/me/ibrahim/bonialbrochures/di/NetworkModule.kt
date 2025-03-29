@@ -9,7 +9,7 @@ import dagger.hilt.components.SingletonComponent
 import me.ibrahim.bonialbrochures.BuildConfig
 import me.ibrahim.bonialbrochures.data.remote.api.BonialApi
 import me.ibrahim.bonialbrochures.data.remote.dto.ContentWrapper
-import me.ibrahim.bonialbrochures.data.remote.util.ContentDeserializer
+import me.ibrahim.bonialbrochures.data.utils.ContentDeserializer
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton

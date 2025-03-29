@@ -35,7 +35,7 @@ data class ResponseContent(
     @SerializedName("contentFormatSource")
     val contentFormatSource: String? = "",
     @SerializedName("contentType")
-    val contentType: String? = "",
+    val contentType: String = "",
     @SerializedName("placement")
     val placement: String? = ""
 ) : Parcelable
