@@ -8,7 +8,7 @@ data class BrochureData(
     val validUntil: String,
     val publishedFrom: String,
     val publishedUntil: String,
-    val type: String,
+    val contentType: String,
     val brochureImage: String,
     val pageCount: Int,
     val publisherName: String? = null,

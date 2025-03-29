@@ -27,9 +27,9 @@ class BrochurePagingSource(
 
             val brochuresData = response.embedded?.contents
                 ?.filter { it.contentType in listOf(BrochureType.Brochure.type, BrochureType.BrochurePremium.type) }
-                ?.mapNotNull { it.content.singleContent }
-                ?.filter { it.distance <= 5.0 }
-                ?.map { it.toBrochuresData() }
+                ?.mapNotNull {
+                    it.content.singleContent?.takeIf { it.distance <= 5.0 }?.toBrochuresData(it.contentType)
+                }
 
             LoadResult.Page(
                 data = brochuresData ?: emptyList(),
