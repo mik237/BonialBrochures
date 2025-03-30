@@ -1,6 +1,5 @@
 package me.ibrahim.bonialbrochures.data.utils
 
-import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities

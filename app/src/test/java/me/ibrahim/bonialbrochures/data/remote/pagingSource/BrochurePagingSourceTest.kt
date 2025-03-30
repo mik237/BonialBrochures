@@ -77,8 +77,8 @@ class BrochurePagingSourceTest {
             )
         )
 
-        assertTrue(result is PagingSource.LoadResult.Page)
-        assertEquals(1, (result as PagingSource.LoadResult.Page).data.size)
+        assertTrue(result is LoadResult.Page)
+        assertEquals(1, (result as LoadResult.Page).data.size)
         assertEquals("Test Brochure", result.data[0].title)
     }
 
@@ -90,8 +90,8 @@ class BrochurePagingSourceTest {
 
         val result = pagingSource.load(PagingSource.LoadParams.Refresh(key = 0, loadSize = 20, placeholdersEnabled = false))
 
-        assertTrue(result is PagingSource.LoadResult.Page)
-        assertTrue((result as PagingSource.LoadResult.Page).data.isEmpty())
+        assertTrue(result is LoadResult.Page)
+        assertTrue((result as LoadResult.Page).data.isEmpty())
     }
 
     @Test
