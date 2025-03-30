@@ -24,7 +24,7 @@ Bonial Brochures is a modern Android application built using **Jetpack Compose**
 ## 🚀 Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/BonialBrochures.git
+git clone https://github.com/mik237/BonialBrochures.git
 
 # Open the project in Android Studio
 # Sync dependencies and run the project on an emulator or a physical device
