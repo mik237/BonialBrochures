@@ -6,7 +6,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import me.ibrahim.bonialbrochures.domain.utils.ConnectionManager
 
-class ConnectionManagerImpl(val app: Application) : ConnectionManager {
+class ConnectionManagerImpl(val app: Context) : ConnectionManager {
 
     override fun isConnected(): Boolean {
         return isWifiEnabled() || isCellularDataEnabled()
